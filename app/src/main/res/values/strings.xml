@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">Popular Shows</string>
+    <string name="poster_of_show">Poster of show</string>
+    <string name="most_popular">Most popular</string>
+    <string name="top_rated">Most rating</string>
+    <string name="add_to_favourite">Add to favourite</string>
+    <string name="item_main">Main</string>
+    <string name="item_favourite">Favourites</string>
+    <string name="launch_trailer">Launch trailer</string>
+    <string name="title">Title:</string>
+    <string name="original_title">Original title:</string>
+    <string name="rating">Rating:</string>
+    <string name="first_air_date">First air date:</string>
+    <string name="description">Description:</string>
+    <string name="star_image">Add or remove from favourites</string>
+    <string name="remove_from_favourite">Remove from favorites</string>
+    <string name="reviews">Reviews:</string>
+    <string name="trailers">Trailers:</string>
+    <string name="next_episode">Next episode:</string>
+    <string name="seasons">Duration:</string>
+    <string name="status">Status:</string>
+    <string name="genres">Genre:</string>
+    <string name="seasons_string">seasons</string>
+</resources>

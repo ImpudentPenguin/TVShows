@@ -1,0 +1,280 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                             xmlns:tools="http://schemas.android.com/tools"
+                                             xmlns:app="http://schemas.android.com/apk/res-auto"
+                                             android:layout_width="match_parent"
+                                             android:layout_height="match_parent">
+
+
+    <TextView
+            style="@style/labelStyle"
+            android:text="@string/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textViewLabelTitle"
+            android:textStyle="bold"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"/>
+
+    <android.support.constraint.Guideline
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintGuide_percent="0.5"
+            android:id="@+id/guidelineCenter"/>
+
+    <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/textViewTitle"
+            app:layout_constraintStart_toStartOf="@+id/guidelineCenter"
+            android:layout_marginStart="@dimen/spacing_small_8"
+            android:layout_marginTop="@dimen/spacing_small_8"
+            android:layout_marginEnd="@dimen/spacing_small_8"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+    <TextView
+            style="@style/labelStyle"
+            android:text="@string/original_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:id="@+id/textViewLabelOriginalTitle"
+            app:layout_constraintTop_toBottomOf="@+id/textViewTitle"
+            app:layout_constraintStart_toStartOf="parent"/>
+    <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/textViewOriginalTitle"
+            app:layout_constraintStart_toStartOf="@+id/guidelineCenter"
+            android:layout_marginStart="@dimen/spacing_small_8"
+            android:layout_marginTop="@dimen/spacing_small_8"
+            app:layout_constraintTop_toBottomOf="@+id/textViewTitle"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginEnd="@dimen/spacing_small_8"/>
+
+
+    <TextView
+            style="@style/labelStyle"
+            android:text="@string/genres"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:id="@+id/textViewLabelGenre"
+            app:layout_constraintTop_toBottomOf="@+id/textViewOriginalTitle"
+            app:layout_constraintStart_toStartOf="parent"/>
+    <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/textViewGenre"
+            app:layout_constraintStart_toStartOf="@+id/guidelineCenter"
+            android:layout_marginStart="@dimen/spacing_small_8"
+            android:layout_marginTop="@dimen/spacing_small_8"
+            app:layout_constraintTop_toBottomOf="@+id/textViewOriginalTitle"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginEnd="@dimen/spacing_small_8"/>
+
+    <TextView
+            style="@style/labelStyle"
+            android:text="@string/status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:id="@+id/textViewLabelStatus"
+            app:layout_constraintTop_toBottomOf="@+id/textViewGenre"
+            app:layout_constraintStart_toStartOf="parent"/>
+    <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/textViewStatus"
+            app:layout_constraintStart_toStartOf="@+id/guidelineCenter"
+            android:layout_marginStart="@dimen/spacing_small_8"
+            android:layout_marginTop="@dimen/spacing_small_8"
+            app:layout_constraintTop_toBottomOf="@+id/textViewGenre"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginEnd="@dimen/spacing_small_8"/>
+
+
+    <TextView
+            style="@style/labelStyle"
+            android:text="@string/seasons"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:id="@+id/textViewLabelSeasons"
+            app:layout_constraintTop_toBottomOf="@+id/textViewStatus"
+            app:layout_constraintStart_toStartOf="parent"/>
+    <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/textViewSeasons"
+            app:layout_constraintStart_toStartOf="@+id/guidelineCenter"
+            android:layout_marginStart="@dimen/spacing_small_8"
+            android:layout_marginTop="@dimen/spacing_small_8"
+            app:layout_constraintTop_toBottomOf="@+id/textViewStatus"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginEnd="@dimen/spacing_small_8"/>
+
+    <TextView
+            style="@style/labelStyle"
+            android:text="@string/rating"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:id="@+id/textViewLabelRating"
+            app:layout_constraintTop_toBottomOf="@+id/textViewSeasons"
+            app:layout_constraintStart_toStartOf="parent"/>
+
+    <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/textViewRating"
+            android:layout_marginTop="@dimen/spacing_small_8"
+            app:layout_constraintTop_toBottomOf="@+id/textViewSeasons"
+            app:layout_constraintStart_toStartOf="@+id/guidelineCenter"
+            android:layout_marginStart="@dimen/spacing_small_8"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginEnd="@dimen/spacing_small_8"/>
+
+    <TextView
+            style="@style/labelStyle"
+            android:text="@string/first_air_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:id="@+id/textViewLabelReleaseDate"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textViewRating"/>
+    <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/spacing_small_8"
+            android:id="@+id/textViewReleaseDate"
+            app:layout_constraintTop_toBottomOf="@+id/textViewRating"
+            app:layout_constraintStart_toStartOf="@+id/guidelineCenter"
+            android:layout_marginStart="@dimen/spacing_small_8"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginEnd="@dimen/spacing_small_8"/>
+
+    <TextView
+            style="@style/labelStyle"
+            android:text="@string/next_episode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:id="@+id/textViewLabelNextEpisode"
+            app:layout_constraintTop_toBottomOf="@+id/textViewReleaseDate"
+            app:layout_constraintStart_toStartOf="parent"/>
+    <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/textViewNextEpisode"
+            app:layout_constraintStart_toStartOf="@+id/guidelineCenter"
+            android:layout_marginStart="@dimen/spacing_small_8"
+            android:layout_marginTop="@dimen/spacing_small_8"
+            app:layout_constraintTop_toBottomOf="@+id/textViewReleaseDate"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginEnd="@dimen/spacing_small_8"/>
+
+    <TextView
+            style="@style/labelStyle"
+            android:text="@string/description"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:id="@+id/textViewLabelDescription"
+            app:layout_constraintTop_toBottomOf="@+id/textViewNextEpisode"
+            app:layout_constraintStart_toStartOf="parent"/>
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_marginTop="@dimen/spacing_small_8"
+            android:layout_height="wrap_content"
+            android:id="@+id/textViewOverview"
+            app:layout_constraintTop_toBottomOf="@+id/textViewLabelDescription"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="@dimen/spacing_small_8"/>
+    <View
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:background="@color/colorLightGrey"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/textViewOverview"
+            app:layout_constraintBottom_toTopOf="@id/textViewLabelTrailers"
+            android:id="@+id/view"/>
+
+    <TextView
+            style="@style/labelStyle"
+            android:text="@string/trailers"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:id="@+id/textViewLabelTrailers"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/textViewOverview"/>
+
+    <android.support.v7.widget.RecyclerView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:nestedScrollingEnabled="false"
+            android:id="@+id/recyclerViewTrailers"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/textViewLabelTrailers"/>
+
+    <TextView
+            android:text="Трейлеры отсутствуют"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textViewNoTrailers"
+            android:textColor="#BDBDBD"
+            android:padding="@dimen/spacing_small_8"
+            android:textSize="@dimen/font_small_12"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/view"
+            app:layout_constraintBottom_toTopOf="@id/viewTrailers"/>
+
+    <View
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:background="@color/colorLightGrey"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/recyclerViewTrailers"
+            app:layout_constraintBottom_toTopOf="@id/textViewLabelReviews"
+            android:id="@+id/viewTrailers"/>
+
+    <TextView
+            style="@style/labelStyle"
+            android:text="@string/reviews"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:id="@+id/textViewLabelReviews"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/recyclerViewTrailers"/>
+
+    <android.support.v7.widget.RecyclerView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/recyclerViewReviews"
+            android:nestedScrollingEnabled="false"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/textViewLabelReviews"/>
+
+    <TextView
+            android:text="Отзывы отсутствуют"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textViewNoReviews"
+            android:textSize="@dimen/font_small_12"
+            android:textColor="#BDBDBD"
+            android:padding="@dimen/spacing_small_8"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/viewTrailers"/>
+
+
+</android.support.constraint.ConstraintLayout>
